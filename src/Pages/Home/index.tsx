@@ -2,8 +2,9 @@ import React from 'react';
 
 import { InputText } from '../../Components/input';
 import { SearchButton } from '../../Components/Search';
+import { CheckBox } from '../../Components/CheckBox';
+import { MenuListComposition } from '../../Components/Menu';
 
-import LogoImg from '../../Assets/Images/logo.svg';
 import Student from '../../Assets/Images/study.svg';
 
 import './styles.css';
@@ -12,7 +13,7 @@ export const Home = () => {
   return (
     <div id="Home-page">
       <header className="Header">
-        <img src={LogoImg} alt="Logo" />
+        <MenuListComposition />
       </header>
       <main>
         <div className="Title">
@@ -30,16 +31,18 @@ export const Home = () => {
           />
 
           <div className="Option">
-            <button type="button">
-              <h1>Im a teacher</h1>
-            </button>
+            <div className="Option-div">
+              <CheckBox />
+              <p>I&apos;M A TEACHER</p>
+            </div>
 
-            <button type="button">
-              <h1>Im a student</h1>
-            </button>
+            <div className="Option-div">
+              <CheckBox />
+              <p>I&apos;M A STUDENT</p>
+            </div>
           </div>
           <SearchButton>
-            <h1>SEARCH</h1>
+            <h2>SEARCH</h2>
           </SearchButton>
         </div>
 

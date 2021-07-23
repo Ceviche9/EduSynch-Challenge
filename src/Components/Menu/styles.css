@@ -1,0 +1,8 @@
+.Menu {
+  display: flex;
+}
+.Logo-div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
