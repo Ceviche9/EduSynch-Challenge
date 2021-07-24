@@ -2,7 +2,7 @@ import React from 'react';
 
 import { InputText } from '../../Components/input';
 import { SearchButton } from '../../Components/Search';
-import { CheckBox } from '../../Components/CheckBox';
+import { CheckboxLabels } from '../../Components/CheckBox';
 import { MenuListComposition } from '../../Components/Menu';
 
 import Student from '../../Assets/Images/study.svg';
@@ -32,13 +32,11 @@ export const Home = () => {
 
           <div className="Option">
             <div className="Option-div">
-              <CheckBox />
-              <p>I&apos;M A TEACHER</p>
+              <CheckboxLabels title="I'M A TEACHER" />
             </div>
 
             <div className="Option-div">
-              <CheckBox />
-              <p>I&apos;M A STUDENT</p>
+              <CheckboxLabels title="I'M A STUDENT" />
             </div>
           </div>
           <SearchButton>

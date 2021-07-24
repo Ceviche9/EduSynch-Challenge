@@ -43,7 +43,7 @@
 
 .SearchBox input {
   max-width: 85%;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #ffff;
   font: 400 1rem Open Sans;
 }
@@ -64,11 +64,10 @@
   align-items: center;
   justify-content: space-evenly;
   width: 160px;
-  height: 58px;
-  font: 400 12px Poppins;
+  height: 55px;
   color: #ffff;
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid #ffff;
 }
 
