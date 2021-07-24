@@ -25,16 +25,6 @@ export const MenuListComposition = () => {
     setOpen(false);
   }
 
-  // return focus to the button when we transitioned from !open -> open
-  const prevOpen = React.useRef(open);
-  React.useEffect(() => {
-    if (prevOpen.current === true && open === false) {
-      anchorRef.current!.focus();
-    }
-
-    prevOpen.current = open;
-  }, [open]);
-
   return (
     <div className="Menu">
       <div>
@@ -51,7 +41,7 @@ export const MenuListComposition = () => {
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
           <Paper>
-            <ModalMenu onCloseClick={handleModalClose} />
+            <ModalMenu onCloseClick={handleModalClose} state={open} />
           </Paper>
         </Popper>
       </div>

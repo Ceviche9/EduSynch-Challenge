@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '@material-ui/core/Button';
 import { InputText } from '../../Components/input';
 import { SearchButton } from '../../Components/Search';
 import { CheckboxLabels } from '../../Components/CheckBox';
@@ -31,17 +32,21 @@ export const Home = () => {
           />
 
           <div className="Option">
-            <div className="Option-div">
-              <CheckboxLabels>
-                <p>I&apos;M A TEACHER</p>
-              </CheckboxLabels>
-            </div>
+            <Button className="Option-button">
+              <div className="Option-div">
+                <CheckboxLabels>
+                  <p>I&apos;M A TEACHER</p>
+                </CheckboxLabels>
+              </div>
+            </Button>
 
-            <div className="Option-div">
-              <CheckboxLabels>
-                <p>I&apos;M A STUDENT</p>
-              </CheckboxLabels>
-            </div>
+            <Button className="Option-button">
+              <div className="Option-div">
+                <CheckboxLabels>
+                  <p>I&apos;M A STUDENT</p>
+                </CheckboxLabels>
+              </div>
+            </Button>
           </div>
           <SearchButton>
             <h2>SEARCH</h2>

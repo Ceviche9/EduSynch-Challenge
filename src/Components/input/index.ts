@@ -7,7 +7,7 @@ export const InputText = styled.input`
   padding: 10px;
   display: block;
   width: 100%;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.20);
   border: 0.5px solid #ffff;
 
 

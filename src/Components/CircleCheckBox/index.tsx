@@ -17,16 +17,14 @@ export const CircleCheckBox = withStyles({
   checked: {},
 })((props: CheckboxProps) => {
   return (
-    <>
-      <Checkbox
-        className="Checkbox"
-        icon={<CheckCircleIcon />}
-        checkedIcon={<CheckCircleIcon />}
-        color="default"
-        size="medium"
-        title={props.title}
-        {...props}
-      />
-    </>
+    <Checkbox
+      className="Checkbox"
+      icon={<CheckCircleIcon />}
+      checkedIcon={<CheckCircleIcon />}
+      color="default"
+      size="medium"
+      title={props.title}
+      {...props}
+    />
   );
 });
