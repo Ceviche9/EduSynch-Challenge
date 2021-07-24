@@ -1,20 +1,21 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 import { CircleCheckBox } from '../CircleCheckBox';
 
 type CheckBoxProps = {
   children: ReactNode;
+  state: boolean
 }
 
-export function CheckboxLabels({ children }: CheckBoxProps) {
-  const [state, setState] = React.useState({
-    checkedA: true,
-  });
+export function CheckboxLabels({ children, state }: CheckBoxProps) {
+  const [checked, setChecked] = useState(true);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
+  const handleChange = () => {
+    if (checked === true) {
+      return setChecked(false);
+    } return setChecked(true);
   };
 
   return (
@@ -22,11 +23,9 @@ export function CheckboxLabels({ children }: CheckBoxProps) {
       control={(
         <CircleCheckBox
           className="Checkbox"
-          checked={state.checkedA}
+          checked={state}
           onChange={handleChange}
-          name="checkedA"
           color="primary"
-          style={{ borderRadius: '10px' }}
         />
       )}
       label={children}

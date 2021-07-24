@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Button from '@material-ui/core/Button';
 import { InputText } from '../../Components/input';
@@ -11,6 +11,29 @@ import Student from '../../Assets/Images/study.svg';
 import './styles.css';
 
 export const Home = () => {
+  const [student, setStudent] = useState(true);
+  const [teacher, setTeacher] = useState(false);
+
+  const handleButtonStateTeacher = () => {
+    if (teacher === false) {
+      setTeacher(true);
+      return setStudent(false);
+    }
+
+    setStudent(false);
+    return setTeacher(true);
+  };
+
+  const handleButtonStateStudent = () => {
+    if (student === false) {
+      setStudent(true);
+      return setTeacher(false);
+    }
+
+    setTeacher(false);
+    return setStudent(true);
+  };
+
   return (
     <div id="Home-page">
       <header className="Header">
@@ -32,17 +55,23 @@ export const Home = () => {
           />
 
           <div className="Option">
-            <Button className="Option-button">
+            <Button
+              onClick={handleButtonStateTeacher}
+              className="Option-button"
+            >
               <div className="Option-div">
-                <CheckboxLabels>
+                <CheckboxLabels state={teacher}>
                   <p>I&apos;M A TEACHER</p>
                 </CheckboxLabels>
               </div>
             </Button>
 
-            <Button className="Option-button">
+            <Button
+              onClick={handleButtonStateStudent}
+              className="Option-button"
+            >
               <div className="Option-div">
-                <CheckboxLabels>
+                <CheckboxLabels state={student}>
                   <p>I&apos;M A STUDENT</p>
                 </CheckboxLabels>
               </div>

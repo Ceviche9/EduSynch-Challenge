@@ -1,17 +1,18 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import Checkbox, { CheckboxProps } from '@material-ui/core/Checkbox';
+import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import { withStyles } from '@material-ui/core/styles';
-import { yellow } from '@material-ui/core/colors';
+import { yellow, deepPurple } from '@material-ui/core/colors';
 
 import './styles.css';
 
 export const CircleCheckBox = withStyles({
   root: {
-    color: yellow[300],
+    color: deepPurple[300],
     '&$checked': {
-      color: yellow[700],
+      color: yellow[300],
     },
   },
   checked: {},
@@ -19,7 +20,7 @@ export const CircleCheckBox = withStyles({
   return (
     <Checkbox
       className="Checkbox"
-      icon={<CheckCircleIcon />}
+      icon={<FiberManualRecordIcon />}
       checkedIcon={<CheckCircleIcon />}
       color="default"
       size="medium"
