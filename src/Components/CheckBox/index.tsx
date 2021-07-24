@@ -1,16 +1,14 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { ReactNode } from 'react';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 import { CircleCheckBox } from '../CircleCheckBox';
 
-import './styles.css';
-
 type CheckBoxProps = {
-  title: string;
+  children: ReactNode;
 }
 
-export function CheckboxLabels({ title }: CheckBoxProps) {
+export function CheckboxLabels({ children }: CheckBoxProps) {
   const [state, setState] = React.useState({
     checkedA: true,
   });
@@ -31,7 +29,7 @@ export function CheckboxLabels({ title }: CheckBoxProps) {
           style={{ borderRadius: '10px' }}
         />
       )}
-      label={title}
+      label={children}
     />
   );
 }

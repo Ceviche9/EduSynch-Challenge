@@ -71,6 +71,10 @@
   border: 1px solid #ffff;
 }
 
+.Option-div p {
+  font: 400 12px Poppins;
+}
+
 .Student-img {
   margin-top: 15%;
   display: fixed;

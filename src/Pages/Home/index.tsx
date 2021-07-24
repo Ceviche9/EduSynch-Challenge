@@ -32,11 +32,15 @@ export const Home = () => {
 
           <div className="Option">
             <div className="Option-div">
-              <CheckboxLabels title="I'M A TEACHER" />
+              <CheckboxLabels>
+                <p>I&apos;M A TEACHER</p>
+              </CheckboxLabels>
             </div>
 
             <div className="Option-div">
-              <CheckboxLabels title="I'M A STUDENT" />
+              <CheckboxLabels>
+                <p>I&apos;M A STUDENT</p>
+              </CheckboxLabels>
             </div>
           </div>
           <SearchButton>
