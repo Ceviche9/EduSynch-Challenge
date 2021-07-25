@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 
 import CloseIcon from '@material-ui/icons/Close';
 import { common } from '@material-ui/core/colors';
 import Modal from '@material-ui/core/Modal';
+import { InputText } from '../input';
 import { SearchButton } from '../Search';
 
 import './styles.css';
@@ -45,9 +45,18 @@ export const LoginModal = (
         </Button>
       </header>
       <main>
-
         <div className="Auth">
-          <h2>Login</h2>
+          <div>
+            <p>Username:</p>
+            <InputText />
+          </div>
+          <div>
+            <p>Password:</p>
+            <InputText type="password" />
+          </div>
+          <SearchButton>
+            <h2>LOGIN</h2>
+          </SearchButton>
         </div>
       </main>
     </div>

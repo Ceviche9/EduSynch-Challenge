@@ -8,7 +8,8 @@ export const InputText = styled.input`
   display: block;
   width: 100%;
   background: rgba(255, 255, 255, 0.20);
-  border: 0.5px solid #ffff;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.60);
 
 
   &::placeholder {
