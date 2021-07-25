@@ -24,7 +24,7 @@ export const PasswordInput = () => {
 
   return (
     <div>
-      <h4>Password:</h4>
+      <p>Password:</p>
       <Input
         className="input-password"
         type={values.showPassword ? 'text' : 'password'}

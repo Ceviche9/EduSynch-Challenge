@@ -9,7 +9,7 @@ import { common } from '@material-ui/core/colors';
 import Modal from '@material-ui/core/Modal';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
-import { SearchButton } from '../Search';
+import { ModalButton } from '../ModalSearchButton';
 import { LoginModal } from '../LoginModal';
 
 import LogoImg from '../../Assets/Images/logo.svg';
@@ -57,9 +57,9 @@ export const ModalMenu = (
         <Link to="/">About us</Link>
       </div>
       <div className="Search">
-        <SearchButton onClick={handleLoginModalToggle}>
+        <ModalButton onClick={handleLoginModalToggle}>
           <h2>Get Started</h2>
-        </SearchButton>
+        </ModalButton>
       </div>
     </main>
   );

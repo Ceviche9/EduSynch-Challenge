@@ -11,10 +11,19 @@
   flex-direction: row;
   gap: 2%;
   padding: 1rem;
+  max-height: 30px;
+}
+
+.menu {
+  align-self: flex-start;
+}
+
+.NavBar {
+  visibility: hidden;
 }
 
 .Title {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 2%;
   padding: 1rem;
   display: flex;
@@ -33,8 +42,17 @@
   color: #ffeaa4;
   font: 700 2.5rem Poppins;
 }
+
+.Text {
+  position: absolute;
+  visibility: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
 .SearchBox {
-  margin-top: 8%;
   padding: 10px;
   width: 100%;
   display: flex;
@@ -43,19 +61,20 @@
 }
 
 .SearchBox input {
-  max-width: 85%;
+  max-width: 355px;
   border-radius: 5px;
   color: #ffff;
   font: 400 1rem Open Sans;
 }
 
 .Option {
-  width: 100%;
+  max-width: 372px;
   margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 30px;
 }
 
 .Option-div {
@@ -77,11 +96,12 @@
 }
 
 .Student-img {
-  margin-top: 15%;
+  margin-bottom: -20%;
+  position: relative;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .Student-img img {
@@ -89,8 +109,8 @@
 }
 
 footer {
+  margin: auto;
   width: 100%;
   height: 110px;
-  margin-top: -20%;
   background: #200e64;
 }

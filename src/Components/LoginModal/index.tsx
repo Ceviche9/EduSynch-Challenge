@@ -5,7 +5,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import { common } from '@material-ui/core/colors';
 import Modal from '@material-ui/core/Modal';
 import { InputText } from '../input';
-import { SearchButton } from '../Search';
+import { ModalButton } from '../ModalSearchButton';
 import { PasswordInput } from '../PasswordInput';
 
 import './styles.css';
@@ -54,9 +54,9 @@ export const LoginModal = (
           <div className="password-input">
             <PasswordInput />
           </div>
-          <SearchButton>
+          <ModalButton>
             <h2>LOGIN</h2>
-          </SearchButton>
+          </ModalButton>
         </div>
       </main>
     </div>
