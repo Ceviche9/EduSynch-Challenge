@@ -20,15 +20,22 @@ type ModalMenuProps = {
 
 export const ModalMenu = ({ state, onCloseClick }: ModalMenuProps) => {
   function handleClose() {
-    console.log('teste');
     return onCloseClick();
   }
 
   const body = (
-    <main>
+    <main id="Modal-div">
+      <header>
+        <img src={LogoImg} alt="Logo" />
+        <Button
+          onClick={handleClose}
+        >
+          <CloseIcon style={{ color: common.white }} />
+        </Button>
+      </header>
       <div className="info">
-        <Link id="simple-modal-title" to="/">How it Works</Link>
-        <Link id="simple-modal-description" to="/">About us</Link>
+        <Link to="/">How it Works</Link>
+        <Link to="/">About us</Link>
       </div>
       <div className="Search">
         <SearchButton>
@@ -39,26 +46,13 @@ export const ModalMenu = ({ state, onCloseClick }: ModalMenuProps) => {
   );
 
   return (
-
-    <div id="Modal-div">
-      <header>
-        <img src={LogoImg} alt="Logo" />
-        <Button
-          onClick={handleClose}
-        >
-          <CloseIcon style={{ color: common.white }} />
-        </Button>
-
-      </header>
+    <div>
       <Modal
         open={state}
         onClose={handleClose}
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
       >
         {body}
       </Modal>
     </div>
-
   );
 };

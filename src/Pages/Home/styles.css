@@ -15,12 +15,13 @@
 
 .Title {
   margin-top: 5%;
+  margin-left: 2%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: flex-start;
-  font: 400 1rem Poppins;
+  font: 400 1.25rem Poppins;
   color: #ffff;
 }
 
@@ -30,10 +31,10 @@
 
 .Title h1 {
   color: #ffeaa4;
-  font: 700 2rem Poppins;
+  font: 700 2.5rem Poppins;
 }
 .SearchBox {
-  margin-top: 10%;
+  margin-top: 8%;
   padding: 10px;
   width: 100%;
   display: flex;

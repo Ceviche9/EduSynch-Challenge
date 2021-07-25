@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 // eslint-disable implicit-arrow-linebreak
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
@@ -13,15 +13,14 @@ import LogoImg from '../../Assets/Images/logo.svg';
 import './styles.css';
 
 export const MenuListComposition = () => {
-  const [open, setOpen] = React.useState(false);
-  const anchorRef = React.useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState(false);
+  const anchorRef = useRef<HTMLButtonElement>(null);
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
   };
 
   function handleModalClose() {
-    console.log('Função chamada');
     setOpen(false);
   }
 

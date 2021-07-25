@@ -14,7 +14,7 @@ export const Home = () => {
   const [student, setStudent] = useState(true);
   const [teacher, setTeacher] = useState(false);
 
-  const handleButtonStateTeacher = () => {
+  const handleStateTeacher = () => {
     if (teacher === false) {
       setTeacher(true);
       return setStudent(false);
@@ -24,7 +24,7 @@ export const Home = () => {
     return setTeacher(true);
   };
 
-  const handleButtonStateStudent = () => {
+  const handleStateStudent = () => {
     if (student === false) {
       setStudent(true);
       return setTeacher(false);
@@ -56,7 +56,7 @@ export const Home = () => {
 
           <div className="Option">
             <Button
-              onClick={handleButtonStateTeacher}
+              onClick={handleStateTeacher}
               className="Option-button"
             >
               <div className="Option-div">
@@ -67,7 +67,7 @@ export const Home = () => {
             </Button>
 
             <Button
-              onClick={handleButtonStateStudent}
+              onClick={handleStateStudent}
               className="Option-button"
             >
               <div className="Option-div">
