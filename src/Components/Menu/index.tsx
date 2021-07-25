@@ -21,7 +21,7 @@ export const MenuListComposition = () => {
   };
 
   function handleModalClose() {
-    setOpen(false);
+    return setOpen(false);
   }
 
   return (

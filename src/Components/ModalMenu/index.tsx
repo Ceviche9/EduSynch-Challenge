@@ -1,26 +1,45 @@
-import React from 'react';
+/* eslint-disable no-param-reassign */
+/* eslint-disable max-len */
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 
 import CloseIcon from '@material-ui/icons/Close';
 import { common } from '@material-ui/core/colors';
 import Modal from '@material-ui/core/Modal';
+import Paper from '@material-ui/core/Paper';
+import Popper from '@material-ui/core/Popper';
 import { SearchButton } from '../Search';
+import { LoginModal } from '../LoginModal';
 
 import LogoImg from '../../Assets/Images/logo.svg';
 
 import './styles.css';
 
 type ModalMenuProps = {
-
   state: boolean;
   onCloseClick: () => void;
-
 }
 
-export const ModalMenu = ({ state, onCloseClick }: ModalMenuProps) => {
+export const ModalMenu = (
+  {
+    state,
+    onCloseClick,
+  }: ModalMenuProps,
+) => {
+  const [loginModal, setLoginModal] = useState(false);
+  const anchorLoginRef = useRef<HTMLButtonElement>(null);
+
+  function handleLoginModalToggle() {
+    return setLoginModal(true);
+  }
+
+  function handleModalClose() {
+    return setLoginModal(false);
+  }
+
   function handleClose() {
-    return onCloseClick();
+    onCloseClick();
   }
 
   const body = (
@@ -38,7 +57,7 @@ export const ModalMenu = ({ state, onCloseClick }: ModalMenuProps) => {
         <Link to="/">About us</Link>
       </div>
       <div className="Search">
-        <SearchButton>
+        <SearchButton onClick={handleLoginModalToggle}>
           <h2>Get Started</h2>
         </SearchButton>
       </div>
@@ -53,6 +72,12 @@ export const ModalMenu = ({ state, onCloseClick }: ModalMenuProps) => {
       >
         {body}
       </Modal>
+
+      <Popper open={loginModal} anchorEl={anchorLoginRef.current} role={undefined} transition disablePortal>
+        <Paper>
+          <LoginModal handleCloseLoginModal={handleModalClose} loginModal={loginModal} />
+        </Paper>
+      </Popper>
     </div>
   );
 };
