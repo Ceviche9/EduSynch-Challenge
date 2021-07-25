@@ -6,6 +6,7 @@ import { common } from '@material-ui/core/colors';
 import Modal from '@material-ui/core/Modal';
 import { InputText } from '../input';
 import { SearchButton } from '../Search';
+import { PasswordInput } from '../PasswordInput';
 
 import './styles.css';
 
@@ -46,13 +47,12 @@ export const LoginModal = (
       </header>
       <main>
         <div className="Auth">
-          <div>
+          <div className="username-input">
             <p>Username:</p>
             <InputText />
           </div>
-          <div>
-            <p>Password:</p>
-            <InputText type="password" />
+          <div className="password-input">
+            <PasswordInput />
           </div>
           <SearchButton>
             <h2>LOGIN</h2>

@@ -1,0 +1,10 @@
+.input-password {
+  height: 50px;
+  border-radius: 8px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.6);
+}
