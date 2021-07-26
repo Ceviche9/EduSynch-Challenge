@@ -21,7 +21,8 @@ export const InputText = styled.input`
       font: 400 1rem Poppins;
 
       @media(min-width: 800px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: left;
       }
   }
 

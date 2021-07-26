@@ -249,9 +249,9 @@
   .main-content {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 15%;
+    gap: 5%;
     width: 100%;
     height: 100%;
   }
@@ -313,13 +313,6 @@
     font: 400 2rem Open Sans;
   }
 
-  .SearchBox input ::placeholder {
-    text-align: center;
-    text-justify: distribute;
-    color: #ffff;
-    font: 400 2rem Poppins;
-  }
-
   .search-content {
     padding-top: 5%;
     display: flex;
@@ -339,8 +332,16 @@
     position: fixed;
   }
 
-  .Student-img {
-    margin-top: 2%;
+  .Student-img-mobile {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .Student-img-desktop {
+    visibility: visible;
+    position: relative;
+    margin-bottom: -18%;
+    margin-left: 5%;
     position: relative;
     margin-top: 0;
     display: flex;
@@ -349,14 +350,9 @@
     justify-content: center;
   }
 
-  .Student-img img {
+  .Student-img-desktop img {
     width: 500px;
     height: 700px;
-  }
-
-  .shape-img img {
-    width: 322px;
-    height: 203px;
   }
 
   main {

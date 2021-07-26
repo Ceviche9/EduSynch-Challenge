@@ -15,7 +15,8 @@ import { LoginModal } from '../../Components/LoginModal';
 import { CheckboxLabels } from '../../Components/CheckBox';
 import { MenuListComposition } from '../../Components/Menu';
 
-import Student from '../../Assets/Images/study.svg';
+import StudentDesktop from '../../Assets/Images/student.svg';
+import StudentMobile from '../../Assets/Images/study.svg';
 import Logo from '../../Assets/Images/logo.svg';
 import Group from '../../Assets/Images/Group.svg';
 
@@ -156,10 +157,15 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className="Student-img">
-            <img src={Student} alt="student" />
+          <div className="Student-img-desktop">
+            <img src={StudentDesktop} alt="student" />
+          </div>
+
+          <div className="Student-img-mobile">
+            <img src={StudentMobile} alt="student" />
           </div>
         </div>
+
       </main>
 
       <div id="footer-div">
