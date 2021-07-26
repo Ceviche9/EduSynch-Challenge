@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-export const SearchButton = styled.button`
+export const DesktopSearchButton = styled.button`
 
   margin-top: 5%;
 
-  border-radius: 2%;
-  width: 360px;
-  height: 58px;
+  border-radius: 6%;
+  width: 209px;
+  height: 56px;
   background: #FFD74F;
   font: 700 11px Open Sans;
   color: #744FF4;

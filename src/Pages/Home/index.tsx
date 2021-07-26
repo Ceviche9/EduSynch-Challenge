@@ -1,16 +1,20 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
 
-import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import { Button } from '../../Components/Button';
 import { InputText } from '../../Components/input';
 import { SearchButton } from '../../Components/Search';
 import { DesktopButton } from '../../Components/DesktopButton';
+import { DesktopSearchButton } from '../../Components/DesktopSearchButton';
+
 import { CheckboxLabels } from '../../Components/CheckBox';
 import { MenuListComposition } from '../../Components/Menu';
 
 import Student from '../../Assets/Images/study.svg';
 import Logo from '../../Assets/Images/logo.svg';
+import Detail from '../../Assets/Images/detail.svg';
+import Shape from '../../Assets/Images/Shape.svg';
 
 import './styles.css';
 import './desktopstyle.css';
@@ -63,73 +67,77 @@ export const Home = () => {
         </div>
       </header>
       <main className="main-mobile">
-        <div className="search-container">
-          <div className="Title">
-            <h2>
-              Find your
-            </h2>
-            <h1>
-              BEST TEACHER
-            </h1>
-            <div className="Text">
-              <p>
-                Whether you are a student trying to find your ideal private
-              </p>
-              <p>
-                language teachers/tutors or a teacher trying to find great students
-              </p>
-              <p>
-                for your customized private lessons!
-              </p>
+        <div className="main-content">
+          <div className="search-container">
+            <div className="Title">
+              <h2>
+                Find your
+              </h2>
+              <h1>
+                BEST TEACHER
+              </h1>
+              <div className="Text">
+                <p>
+                  Whether you are a student trying to find your ideal private
+                </p>
+                <p>
+                  language teachers/tutors or a teacher trying to find great students
+                </p>
+                <p>
+                  for your customized private lessons!
+                </p>
+              </div>
+            </div>
+            <div className="SearchBox">
+              <div className="input-text-div">
+                <InputText
+                  placeholder="Type here what are you looking for"
+                  maxLength={35}
+                />
+              </div>
+              <div className="search-content">
+                <div className="Option">
+                  <Button
+                    checked={teacher}
+                    onClick={handleStateTeacher}
+                    className="Option-button"
+                  >
+                    <div className="Option-div">
+                      <CheckboxLabels state={teacher}>
+                        <p>I&apos;M A TEACHER</p>
+                      </CheckboxLabels>
+                    </div>
+                  </Button>
+
+                  <Button
+                    checked={student}
+                    onClick={handleStateStudent}
+                    className="Option-button"
+                  >
+                    <div className="Option-div">
+                      <CheckboxLabels state={student}>
+                        <p>I&apos;M A STUDENT</p>
+                      </CheckboxLabels>
+                    </div>
+                  </Button>
+                </div>
+                <div className="search-button-mobile">
+                  <SearchButton>
+                    <h2>SEARCH</h2>
+                  </SearchButton>
+                </div>
+                <div className="search-button-desktop">
+                  <DesktopSearchButton>
+                    <h2>SEARCH</h2>
+                  </DesktopSearchButton>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="SearchBox">
-            <div className="input-text-div">
-              <InputText
-                placeholder="Type here what are you looking for"
-                maxLength={35}
-              />
-            </div>
-            <div className="search-content">
-              <div className="Option">
-                <Button
-                  onClick={handleStateTeacher}
-                  className="Option-button"
-                >
-                  <div className="Option-div">
-                    <CheckboxLabels state={teacher}>
-                      <p>I&apos;M A TEACHER</p>
-                    </CheckboxLabels>
-                  </div>
-                </Button>
 
-                <Button
-                  onClick={handleStateStudent}
-                  className="Option-button"
-                >
-                  <div className="Option-div">
-                    <CheckboxLabels state={student}>
-                      <p>I&apos;M A STUDENT</p>
-                    </CheckboxLabels>
-                  </div>
-                </Button>
-              </div>
-              <div className="search-button-mobile">
-                <SearchButton>
-                  <h2>SEARCH</h2>
-                </SearchButton>
-              </div>
-              <div className="search-button-desktop">
-                <DesktopButton>
-                  <h2>SEARCH</h2>
-                </DesktopButton>
-              </div>
-            </div>
+          <div className="Student-img">
+            <img src={Student} alt="student" />
           </div>
-        </div>
-
-        <div className="Student-img">
-          <img src={Student} alt="student" />
         </div>
       </main>
 

@@ -12,6 +12,10 @@ boty,
 
 body {
   background: #7a57fd;
+  background-image: url("../Images/detail.svg");
+  background-repeat: no-repeat;
+  background-position-x: 1077px;
+  background-position-y: -16px;
 }
 
 #root {

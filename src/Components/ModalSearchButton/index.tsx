@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const ModalButton = styled.button`
 
@@ -11,5 +12,10 @@ export const ModalButton = styled.button`
   font: 700 11px Open Sans;
   color: #744FF4;
   text-align: center;
+
+  &:hover {
+    background: ${darken(0.07, '#FFD74F')};
+  }
+
 
 `;

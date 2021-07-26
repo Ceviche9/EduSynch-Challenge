@@ -10,6 +10,7 @@ export const InputText = styled.input`
   background: rgba(255, 255, 255, 0.20);
   border: 1px solid;
   border-color: rgba(255, 255, 255, 0.60);
+  outline: none;
 
 
   &::placeholder {
@@ -18,6 +19,10 @@ export const InputText = styled.input`
       align-content: center;
       color: #ffff;
       font: 400 1rem Poppins;
+
+      @media(min-width: 800px) {
+        font-size: 2rem;
+      }
   }
 
 `;
