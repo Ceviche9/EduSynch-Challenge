@@ -209,6 +209,10 @@
     align-items: center;
   }
 
+  .get-started-div h2 {
+    font: 400 24px Open Sans;
+  }
+
   .logo-info {
     justify-self: flex-end;
     width: 400px;
@@ -351,6 +355,7 @@
   }
 
   .Student-img-desktop img {
+    padding-bottom: 30px;
     width: 500px;
     height: 700px;
   }

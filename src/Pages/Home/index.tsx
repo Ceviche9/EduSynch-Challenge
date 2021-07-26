@@ -71,12 +71,12 @@ export const Home = () => {
               <Link to="/">About us</Link>
             </div>
           </div>
-          <div>
+          <div className="get-started-div">
             <DesktopButton
               onClick={handleLoginModalToggle}
               className="getstarted-button"
             >
-              <h2>GET STARTED</h2>
+              <h2>Get Started</h2>
             </DesktopButton>
           </div>
         </div>

@@ -7,6 +7,7 @@ import Modal from '@material-ui/core/Modal';
 import { InputText } from '../input';
 import { ModalButton } from '../ModalSearchButton';
 import { PasswordInput } from '../PasswordInput';
+import { DesktopButton } from '../DesktopButton';
 
 import './styles.css';
 
@@ -54,9 +55,18 @@ export const LoginModal = (
           <div className="password-input">
             <PasswordInput />
           </div>
-          <ModalButton>
-            <h2>LOGIN</h2>
-          </ModalButton>
+          <div className="modal-button-div">
+            <div className="modal-button-mobile">
+              <ModalButton>
+                <h2>LOGIN</h2>
+              </ModalButton>
+            </div>
+            <div className="modal-button-desktop">
+              <DesktopButton>
+                <h2>LOGIN</h2>
+              </DesktopButton>
+            </div>
+          </div>
         </div>
       </main>
     </div>
