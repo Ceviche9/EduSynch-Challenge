@@ -7,7 +7,7 @@ export const DesktopButton = styled.button`
 
   border-radius: 6%;
   width: 165px;
-  height: 48px;
+  height: 44px;
   background: #FFD74F;
   font: 700 11px Open Sans;
   color: #744FF4;

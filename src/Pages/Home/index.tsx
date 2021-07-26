@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React, { useState, useRef } from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import { Button } from '../../Components/Button';
@@ -18,14 +18,16 @@ import { MenuListComposition } from '../../Components/Menu';
 import StudentDesktop from '../../Assets/Images/student.svg';
 import StudentMobile from '../../Assets/Images/study.svg';
 import Logo from '../../Assets/Images/logo.svg';
-import Group from '../../Assets/Images/Group.svg';
 
 import './styles.css';
 import './desktopstyle.css';
 
 export const Home = () => {
+  const history = useHistory();
   const [student, setStudent] = useState(true);
   const [teacher, setTeacher] = useState(false);
+  const [inputValue, setInputValue] = useState('');
+  console.log(inputValue);
 
   const handleStateTeacher = () => {
     if (teacher === false) {
@@ -47,7 +49,6 @@ export const Home = () => {
     return setStudent(true);
   };
   const [loginModal, setLoginModal] = useState(false);
-  const anchorLoginRef = useRef<HTMLButtonElement>(null);
 
   function handleLoginModalToggle() {
     return setLoginModal(true);
@@ -55,6 +56,14 @@ export const Home = () => {
 
   function handleModalClose() {
     return setLoginModal(false);
+  }
+
+  function handleDashroom() {
+    try {
+      return history.push('/dashboard');
+    } catch (e) {
+      return console.log(e);
+    }
   }
 
   return (
@@ -83,7 +92,7 @@ export const Home = () => {
       </header>
       <main className="main-mobile">
         <div className="desktop-login-modal">
-          <Popper open={loginModal} anchorEl={anchorLoginRef.current} role={undefined} transition disablePortal>
+          <Popper open={loginModal} role={undefined} transition disablePortal>
             <Paper>
               <LoginModal handleCloseLoginModal={handleModalClose} loginModal={loginModal} />
             </Paper>
@@ -113,6 +122,8 @@ export const Home = () => {
             <div className="SearchBox">
               <div className="input-text-div">
                 <InputText
+                  onChange={(e) => setInputValue(e.target.value)}
+                  value={inputValue}
                   placeholder="Type here what are you looking for"
                   maxLength={35}
                 />
@@ -144,12 +155,16 @@ export const Home = () => {
                   </Button>
                 </div>
                 <div className="search-button-mobile">
-                  <SearchButton>
+                  <SearchButton
+                    onClick={handleDashroom}
+                  >
                     <h2>SEARCH</h2>
                   </SearchButton>
                 </div>
                 <div className="search-button-desktop">
-                  <DesktopSearchButton>
+                  <DesktopSearchButton
+                    onClick={handleDashroom}
+                  >
                     <h2>SEARCH</h2>
                   </DesktopSearchButton>
                 </div>

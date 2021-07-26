@@ -28,7 +28,6 @@ export const ModalMenu = (
   }: ModalMenuProps,
 ) => {
   const [loginModal, setLoginModal] = useState(false);
-  const anchorLoginRef = useRef<HTMLButtonElement>(null);
 
   function handleLoginModalToggle() {
     return setLoginModal(true);
@@ -73,7 +72,7 @@ export const ModalMenu = (
         {body}
       </Modal>
 
-      <Popper open={loginModal} anchorEl={anchorLoginRef.current} role={undefined} transition disablePortal>
+      <Popper open={loginModal} role={undefined} transition disablePortal>
         <Paper>
           <LoginModal handleCloseLoginModal={handleModalClose} loginModal={loginModal} />
         </Paper>

@@ -14,7 +14,6 @@ import './styles.css';
 
 export const MenuListComposition = () => {
   const [open, setOpen] = useState(false);
-  const anchorRef = useRef<HTMLButtonElement>(null);
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -28,7 +27,6 @@ export const MenuListComposition = () => {
     <div className="Menu">
       <div>
         <Button
-          ref={anchorRef}
           aria-controls={open ? 'menu-list-grow' : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
@@ -38,7 +36,7 @@ export const MenuListComposition = () => {
             <img src={LogoImg} alt="Logo" />
           </div>
         </Button>
-        <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+        <Popper open={open} role={undefined} transition disablePortal>
           <Paper>
             <ModalMenu onCloseClick={handleModalClose} state={open} />
           </Paper>
