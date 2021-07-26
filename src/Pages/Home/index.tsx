@@ -62,8 +62,8 @@ export const Home = () => {
           </div>
         </div>
       </header>
-      <main>
-        <div className="container">
+      <main className="main-mobile">
+        <div className="search-container">
           <div className="Title">
             <h2>
               Find your
@@ -84,10 +84,12 @@ export const Home = () => {
             </div>
           </div>
           <div className="SearchBox">
-            <InputText
-              placeholder="Type here what are you looking for"
-              maxLength={35}
-            />
+            <div className="input-text-div">
+              <InputText
+                placeholder="Type here what are you looking for"
+                maxLength={35}
+              />
+            </div>
             <div className="search-content">
               <div className="Option">
                 <Button
@@ -117,13 +119,7 @@ export const Home = () => {
                   <h2>SEARCH</h2>
                 </SearchButton>
               </div>
-              <div>
-                <DesktopButton
-                  className="search-button-desktop"
-                >
-                  <h2>SEARCH</h2>
-                </DesktopButton>
-              </div>
+              <div search-button-desktop />
             </div>
           </div>
         </div>
