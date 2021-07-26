@@ -9,6 +9,9 @@
   .menu {
     visibility: hidden;
   }
+  .search-button-mobile {
+    visibility: hidden;
+  }
   .Header {
     display: flex;
     flex-direction: row;
@@ -110,6 +113,10 @@
     color: #ffff;
   }
 
+  .getstarted-button {
+    visibility: visible;
+  }
+
   .getstarted-button h2 {
     font: 400 12px Open Sans;
   }
@@ -117,11 +124,12 @@
   main {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 
   .container {
+    margin-top: 2%;
     margin-bottom: 5%;
   }
 
@@ -130,23 +138,52 @@
   }
 
   .Title h2 {
+    font: 700 30px Poppins;
     font-weight: 100;
   }
 
   .Title h1 {
     color: #ffeaa4;
-    font: 700 2.5rem Poppins;
+    font: 700 38px Poppins;
   }
   .Text {
+    margin-top: 10%;
     position: relative;
     visibility: visible;
   }
 
   .container {
+    margin-right: 30%;
+  }
+
+  .SearchBox {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .search-button-mobile {
+    position: relative;
+    visibility: hidden;
+  }
+
+  .search-button-desktop {
+    visibility: visible;
+    position: absolute;
   }
 
   .Student-img {
-    margin-bottom: 0;
+    margin-top: 2%;
     position: relative;
     margin-top: 0;
     display: flex;
@@ -155,13 +192,14 @@
   }
 
   .Student-img img {
-    width: 90%;
+    width: 923px;
+    height: 670px;
   }
 
   footer {
     margin: auto;
     width: 100%;
-    height: 130px;
+    height: 230px;
     background: #200e64;
   }
 }

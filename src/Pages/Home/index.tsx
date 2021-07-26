@@ -88,33 +88,43 @@ export const Home = () => {
               placeholder="Type here what are you looking for"
               maxLength={35}
             />
+            <div className="search-content">
+              <div className="Option">
+                <Button
+                  onClick={handleStateTeacher}
+                  className="Option-button"
+                >
+                  <div className="Option-div">
+                    <CheckboxLabels state={teacher}>
+                      <p>I&apos;M A TEACHER</p>
+                    </CheckboxLabels>
+                  </div>
+                </Button>
 
-            <div className="Option">
-              <Button
-                onClick={handleStateTeacher}
-                className="Option-button"
-              >
-                <div className="Option-div">
-                  <CheckboxLabels state={teacher}>
-                    <p>I&apos;M A TEACHER</p>
-                  </CheckboxLabels>
-                </div>
-              </Button>
-
-              <Button
-                onClick={handleStateStudent}
-                className="Option-button"
-              >
-                <div className="Option-div">
-                  <CheckboxLabels state={student}>
-                    <p>I&apos;M A STUDENT</p>
-                  </CheckboxLabels>
-                </div>
-              </Button>
+                <Button
+                  onClick={handleStateStudent}
+                  className="Option-button"
+                >
+                  <div className="Option-div">
+                    <CheckboxLabels state={student}>
+                      <p>I&apos;M A STUDENT</p>
+                    </CheckboxLabels>
+                  </div>
+                </Button>
+              </div>
+              <div className="search-button-mobile">
+                <SearchButton>
+                  <h2>SEARCH</h2>
+                </SearchButton>
+              </div>
+              <div>
+                <DesktopButton
+                  className="search-button-desktop"
+                >
+                  <h2>SEARCH</h2>
+                </DesktopButton>
+              </div>
             </div>
-            <SearchButton>
-              <h2>SEARCH</h2>
-            </SearchButton>
           </div>
         </div>
 
