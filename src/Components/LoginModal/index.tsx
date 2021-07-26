@@ -60,7 +60,6 @@ export const LoginModal = (
         </div>
       </main>
     </div>
-
   );
 
   return (

@@ -1,20 +1,23 @@
 /* eslint-disable max-len */
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import { Link } from 'react-router-dom';
+import Paper from '@material-ui/core/Paper';
+import Popper from '@material-ui/core/Popper';
 import { Button } from '../../Components/Button';
 import { InputText } from '../../Components/input';
 import { SearchButton } from '../../Components/Search';
 import { DesktopButton } from '../../Components/DesktopButton';
 import { DesktopSearchButton } from '../../Components/DesktopSearchButton';
 
+import { LoginModal } from '../../Components/LoginModal';
+
 import { CheckboxLabels } from '../../Components/CheckBox';
 import { MenuListComposition } from '../../Components/Menu';
 
 import Student from '../../Assets/Images/study.svg';
 import Logo from '../../Assets/Images/logo.svg';
-import Detail from '../../Assets/Images/detail.svg';
-import Shape from '../../Assets/Images/Shape.svg';
+import Group from '../../Assets/Images/Group.svg';
 
 import './styles.css';
 import './desktopstyle.css';
@@ -42,6 +45,16 @@ export const Home = () => {
     setTeacher(false);
     return setStudent(true);
   };
+  const [loginModal, setLoginModal] = useState(false);
+  const anchorLoginRef = useRef<HTMLButtonElement>(null);
+
+  function handleLoginModalToggle() {
+    return setLoginModal(true);
+  }
+
+  function handleModalClose() {
+    return setLoginModal(false);
+  }
 
   return (
     <div id="Home-page">
@@ -59,6 +72,7 @@ export const Home = () => {
           </div>
           <div>
             <DesktopButton
+              onClick={handleLoginModalToggle}
               className="getstarted-button"
             >
               <h2>GET STARTED</h2>
@@ -67,6 +81,13 @@ export const Home = () => {
         </div>
       </header>
       <main className="main-mobile">
+        <div className="desktop-login-modal">
+          <Popper open={loginModal} anchorEl={anchorLoginRef.current} role={undefined} transition disablePortal>
+            <Paper>
+              <LoginModal handleCloseLoginModal={handleModalClose} loginModal={loginModal} />
+            </Paper>
+          </Popper>
+        </div>
         <div className="main-content">
           <div className="search-container">
             <div className="Title">

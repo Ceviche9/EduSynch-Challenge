@@ -130,7 +130,9 @@
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    gap: 2%;
+    grid-gap: 0;
+    gap: 1%;
+    margin-left: 2%;
   }
 
   .Option {
@@ -177,6 +179,10 @@
     flex-direction: column;
   }
 
+  html,
+  body {
+    overflow: hidden;
+  }
   .menu {
     visibility: hidden;
   }
@@ -345,11 +351,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   .Student-img img {
     width: 500px;
     height: 700px;
+  }
+
+  .shape-img img {
+    width: 322px;
+    height: 203px;
   }
 
   main {
