@@ -179,10 +179,10 @@
     flex-direction: column;
   }
 
-  html,
   body {
     overflow: hidden;
   }
+
   .menu {
     visibility: hidden;
   }
@@ -337,11 +337,6 @@
   .search-button-mobile {
     visibility: hidden;
     position: fixed;
-  }
-
-  .search-button-desktop {
-    visibility: visible;
-    position: relative;
   }
 
   .Student-img {

@@ -30,6 +30,10 @@ header {
   font: 400 18px Open Sans;
 }
 
+.username-input {
+  width: 90%;
+}
+
 .password-input {
   width: 90%;
 }
