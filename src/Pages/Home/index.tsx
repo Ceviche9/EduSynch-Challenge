@@ -119,7 +119,11 @@ export const Home = () => {
                   <h2>SEARCH</h2>
                 </SearchButton>
               </div>
-              <div search-button-desktop />
+              <div className="search-button-desktop">
+                <DesktopButton>
+                  <h2>SEARCH</h2>
+                </DesktopButton>
+              </div>
             </div>
           </div>
         </div>

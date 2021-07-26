@@ -9,12 +9,13 @@
   .menu {
     visibility: hidden;
   }
-  .search-button-mobile {
-    visibility: hidden;
-  }
+
   .Header {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 2%;
     padding: 1rem;
     margin-top: 2%;
@@ -53,8 +54,118 @@
     color: #ffff;
   }
 
+  .getstarted-button {
+    visibility: visible;
+  }
+
   .getstarted-button h2 {
     font: 400 12px Open Sans;
+  }
+  .main-mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15%;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Title {
+    display: flex;
+  }
+
+  .Title h2 {
+    font: 700 30px Poppins;
+    font-weight: 100;
+  }
+
+  .Title h1 {
+    color: #ffeaa4;
+    font: 700 38px Poppins;
+  }
+  .Text {
+    margin-top: 5%;
+    position: relative;
+    visibility: visible;
+    font: 400 16px Poppins;
+    font-weight: 100;
+  }
+  .input-text-div {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .SearchBox {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SearchBox input {
+    max-width: 605px;
+    border-radius: 5px;
+    color: #ffff;
+    font: 400 2rem Open Sans;
+  }
+
+  .SearchBox input ::placeholder {
+    text-align: center;
+    text-justify: distribute;
+    color: #ffff;
+    font: 400 2rem Poppins;
+  }
+
+  .search-content {
+    padding-top: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 2%;
+  }
+
+  .Option {
+    margin-top: auto;
+  }
+
+  .search-button-mobile {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .search-button-desktop {
+    visibility: visible;
+    position: relative;
+  }
+
+  .Student-img {
+    margin-top: 2%;
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Student-img img {
+    width: 120%;
+    height: 30%;
+  }
+
+  footer {
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    background: #200e64;
   }
 }
 
@@ -184,16 +295,22 @@
   }
 
   .search-content {
+    padding-top: 5%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     width: 100%;
+    gap: 2%;
+  }
+
+  .Option {
+    margin-top: auto;
   }
 
   .search-button-mobile {
-    position: relative;
     visibility: hidden;
+    position: fixed;
   }
 
   .search-button-desktop {

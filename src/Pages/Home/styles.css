@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-self: flex-start;
-  font: 400 1.25rem Poppins;
+  font: 400 1.5rem Poppins;
   color: #ffff;
 }
 
@@ -109,11 +109,11 @@
 }
 
 .Option-div {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 160px;
   height: 55px;
   color: #ffff;
@@ -123,7 +123,7 @@
 }
 
 .Option-div p {
-  font: 400 12px Poppins;
+  font: 700 11px Poppins;
 }
 
 .Student-img {

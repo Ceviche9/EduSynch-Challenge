@@ -15,6 +15,7 @@ export const InputText = styled.input`
   &::placeholder {
       text-align: center;
       text-justify: distribute;
+      align-content: center;
       color: #ffff;
       font: 400 1rem Poppins;
   }
