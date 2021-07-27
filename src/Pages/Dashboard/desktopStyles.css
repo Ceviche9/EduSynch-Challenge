@@ -94,7 +94,7 @@
     height: 290px !important;
     flex-direction: row !important;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .greetings h3 {
@@ -107,7 +107,6 @@
 
   .dashboard-text {
     padding-top: 2%;
-    margin-right: 10%;
   }
 
   .dashboard-text-p {
@@ -118,9 +117,19 @@
     padding-left: 0;
   }
 
-  .dashboard-text-p p {
+  .dashboard-text-p {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .dashboard-text-desktop {
+    visibility: visible !important;
+    position: relative !important;
     font: 400 17px Open Sans;
     color: #343434;
+  }
+  .dashboard-text-desktop p {
+    width: 100%;
   }
 
   .group-img-desktop {

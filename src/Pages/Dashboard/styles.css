@@ -72,6 +72,11 @@ html {
   box-shadow: inset;
 }
 
+.dashboard-text-desktop {
+  visibility: hidden;
+  position: fixed;
+}
+
 .duble-shape-div {
   align-self: flex-end;
   padding-right: 10px;

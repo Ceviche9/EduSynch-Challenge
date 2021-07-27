@@ -60,6 +60,10 @@ export const Dashboard = () => {
               <p>to find your ideal private language</p>
               <p>teachers/tutors</p>
             </div>
+            <div className="dashboard-text-desktop">
+              <p>Whether you are a student trying to find your ideal private language</p>
+              <p>teachers/tutors</p>
+            </div>
           </div>
           <div className="group-img-desktop">
             <img src={Group} alt="Group" />
