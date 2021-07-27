@@ -52,3 +52,21 @@ body {
   font: 700 1.2rem Poppins;
   color: #200e64;
 }
+
+@media (min-width: 1100px) {
+  #card-body {
+    margin-top: 10%;
+    background: #ffff;
+    width: 310px;
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-body-div {
+    width: 290px;
+    height: 231px;
+  }
+}

@@ -2,13 +2,18 @@ import React from 'react';
 
 import { Button } from '@material-ui/core';
 import { RatingStars } from '../Rating';
-import { Lessions } from '../Lessions';
+import { Lessons } from '../Lessions';
 
 import TeacherCard from '../../Assets/Images/card.svg';
 
 import './styles.css';
 
-export const Card = () => {
+interface ICardProps {
+  lessonsNumber: number;
+  rating: number;
+}
+
+export const Card = ({ lessonsNumber, rating }: ICardProps) => {
   return (
     <div id="card-body">
       <Button>
@@ -18,8 +23,8 @@ export const Card = () => {
           </div>
           <div className="card-main">
             <div className="card-info">
-              <RatingStars />
-              <Lessions lessions={10} />
+              <RatingStars value={rating} />
+              <Lessons lessons={lessonsNumber} />
             </div>
             <div className="card-title">
               <h4>Master English: Improve Your Speaking</h4>

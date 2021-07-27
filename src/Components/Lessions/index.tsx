@@ -3,18 +3,18 @@ import React from 'react';
 import './styles.css';
 
 interface LessionsProps{
-  lessions: number ;
+  lessons: number ;
 }
 
-export const Lessions = ({ lessions }: LessionsProps) => {
+export const Lessons = ({ lessons }: LessionsProps) => {
   return (
     <div className="lessions-div">
       <p>
         {
-        lessions || 0
+        lessons || 0
         }
         {' '}
-        Lessions
+        Lessons
       </p>
     </div>
   );

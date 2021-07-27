@@ -1,3 +1,5 @@
+/* eslint-disable react/no-typos */
+/* eslint-disable class-methods-use-this */
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 

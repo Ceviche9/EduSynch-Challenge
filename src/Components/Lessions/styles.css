@@ -10,3 +10,9 @@
 .lessions-div p {
   font: 700 16px Open Sans;
 }
+
+@media (min-width: 1100px) {
+  .lessions-div p {
+    font: 700 11px Open Sans;
+  }
+}

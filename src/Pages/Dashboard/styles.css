@@ -8,9 +8,28 @@ body {
   overflow-y: scroll;
 }
 
+html {
+  background: #e5e5e5;
+}
+
 .dashboard-header {
   width: 100%;
   background: #7a57fd;
+}
+
+.dashboard-desktop-detail {
+  visibility: hidden;
+  position: fixed;
+}
+
+.dashboard-desktop-detail img {
+  width: 80%;
+  height: 80%;
+}
+
+.dashboard-header-desktop {
+  visibility: hidden;
+  position: fixed;
 }
 
 .dashboard-header-div {
@@ -25,6 +44,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.dropdown-div-desktop {
+  visibility: hidden;
+  position: fixed;
 }
 
 .dashboard-main {
@@ -51,6 +75,7 @@ body {
 .duble-shape-div {
   align-self: flex-end;
   padding-right: 10px;
+  margin-bottom: -15%;
 }
 
 .duble-shape-div img {
@@ -59,8 +84,7 @@ body {
 }
 
 .dashboard-text {
-  position: absolute;
-  margin-top: 10%;
+  align-self: flex-end;
   width: 380px;
   height: 221px;
 }
@@ -99,6 +123,11 @@ body {
 .dashboard-text-p p {
   font: 400 22px Open Sans;
   color: #343434;
+}
+
+.group-img-desktop {
+  visibility: hidden;
+  position: fixed;
 }
 
 .dashboard-footer {

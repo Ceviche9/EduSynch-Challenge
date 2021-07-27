@@ -213,10 +213,6 @@
     flex-direction: column;
   }
 
-  body {
-    overflow: hidden;
-  }
-
   .menu {
     visibility: hidden;
   }
@@ -286,6 +282,7 @@
   }
 
   .main-content {
+    max-width: 1297px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -403,7 +400,7 @@
   footer {
     margin: auto;
     width: 100%;
-    height: 250px;
+    height: 450px;
     background: #200e64;
   }
 }

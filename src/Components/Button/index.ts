@@ -1,9 +1,11 @@
+import { ReactNode } from 'react';
 /* eslint-disable no-confusing-arrow */
 import styled from 'styled-components';
 import { darken } from 'polished';
 
 interface buttonProps {
   checked: boolean;
+  children: ReactNode;
 }
 
 export const Button = styled.button<buttonProps>`
