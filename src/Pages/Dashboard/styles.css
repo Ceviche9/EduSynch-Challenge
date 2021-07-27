@@ -145,3 +145,8 @@ html {
 .dashboard-footer p:nth-child(2) {
   font: 700 18px Open Sans;
 }
+
+.dashboard-footer-desktop {
+  visibility: hidden;
+  position: fixed;
+}

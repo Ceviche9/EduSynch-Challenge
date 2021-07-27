@@ -81,8 +81,11 @@
   }
 
   .dashboard-main {
+    max-width: 1336px;
     margin-top: 2% !important;
     padding-bottom: 0 !important;
+    align-self: center;
+    justify-self: center;
   }
 
   .message-div {
@@ -105,7 +108,6 @@
   .dashboard-text {
     padding-top: 2%;
     margin-right: 10%;
-    padding-left: 5%;
   }
 
   .dashboard-text-p {
@@ -130,9 +132,8 @@
     align-self: flex-end;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
-    position: absolute;
-    right: 83%;
-    top: 10%;
+    align-self: flex-start;
+    padding-right: 20%;
   }
 
   .cards-div {
@@ -148,5 +149,10 @@
 
   .dashboard-footer {
     height: 30% !important;
+  }
+
+  .dashboard-footer-desktop {
+    visibility: visible !important;
+    position: relative !important;
   }
 }
