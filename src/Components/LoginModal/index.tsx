@@ -18,6 +18,8 @@ type ModalMenuProps = {
 
 }
 
+// Componente da Modal de Login
+
 export const LoginModal = (
   {
     loginModal,
@@ -28,6 +30,7 @@ export const LoginModal = (
     return handleCloseLoginModal();
   }
 
+  // Corpo do componente da modal de Login
   const login = (
     <div id="login-modal">
       <header>

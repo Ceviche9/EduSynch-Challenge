@@ -8,6 +8,7 @@ import { yellow, deepPurple } from '@material-ui/core/colors';
 
 import './styles.css';
 
+// ícone da checkbox, seu ícone e cor mudam de acordo com o estado.(true/false)
 export const CircleCheckBox = withStyles({
   root: {
     color: deepPurple[300],

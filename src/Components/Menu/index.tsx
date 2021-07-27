@@ -12,6 +12,7 @@ import LogoImg from '../../Assets/Images/logo.svg';
 
 import './styles.css';
 
+// Componente da Modal no modo mobile
 export const MenuListComposition = () => {
   const [open, setOpen] = useState(false);
 

@@ -1,25 +1,29 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 import { Button } from '@material-ui/core';
 import { RatingStars } from '../Rating';
 import { Lessons } from '../Lessions';
 
-import TeacherCard from '../../Assets/Images/card.svg';
-
 import './styles.css';
 
 interface ICardProps {
   lessonsNumber: number;
   rating: number;
+  title: string;
+  photo: string;
 }
 
-export const Card = ({ lessonsNumber, rating }: ICardProps) => {
+// Corpo dos card de aulas, aqui é definida a imágem, titulo, número de aulas e quantidade de estrelas.
+export const Card = ({
+  lessonsNumber, rating, title, photo,
+}: ICardProps) => {
   return (
     <div id="card-body">
       <Button>
         <div className="card-body-div">
           <div className="card-img">
-            <img src={TeacherCard} alt="Teacher-Card" />
+            <img src={photo} alt="Teacher-Card" />
           </div>
           <div className="card-main">
             <div className="card-info">
@@ -27,7 +31,7 @@ export const Card = ({ lessonsNumber, rating }: ICardProps) => {
               <Lessons lessons={lessonsNumber} />
             </div>
             <div className="card-title">
-              <h4>Master English: Improve Your Speaking</h4>
+              <h4>{title}</h4>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
+// Corpo do card que aparece na tela no modo Mobile
 export const Dropdown = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 

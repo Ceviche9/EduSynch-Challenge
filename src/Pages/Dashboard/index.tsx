@@ -11,6 +11,7 @@ import Logo from '../../Assets/Images/logo.svg';
 import Profile from '../../Assets/Images/profile.svg';
 import DubleShape from '../../Assets/Images/dubleshape.svg';
 import Group from '../../Assets/Images/group.svg';
+import TeacherCard from '../../Assets/Images/card.svg';
 
 import './styles.css';
 import './desktopStyles.css';
@@ -71,28 +72,41 @@ export const Dashboard = () => {
         </div>
         <div className="cards-div">
           <Card
-            lessonsNumber={3}
+            lessonsNumber={10}
             rating={2}
+            title="Master English: Improve Your Speaking"
+            photo={TeacherCard}
           />
           <Card
-            lessonsNumber={3}
+            lessonsNumber={2}
             rating={3}
+            title="Master English: Improve Your Speaking"
+            photo={TeacherCard}
+
           />
           <Card
-            lessonsNumber={3}
+            lessonsNumber={20}
             rating={5}
+            title="Master English: Improve Your Speaking"
+            photo={TeacherCard}
           />
           <Card
-            lessonsNumber={3}
+            lessonsNumber={4}
             rating={1}
+            title="Master English: Improve Your Speaking"
+            photo={TeacherCard}
           />
           <Card
-            lessonsNumber={3}
+            lessonsNumber={5}
             rating={2}
+            title="Master English: Improve Your Speaking"
+            photo={TeacherCard}
           />
           <Card
-            lessonsNumber={3}
+            lessonsNumber={5}
             rating={3}
+            title="Master English: Improve Your Speaking"
+            photo={TeacherCard}
           />
         </div>
       </main>

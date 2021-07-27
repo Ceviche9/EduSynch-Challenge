@@ -26,9 +26,10 @@ export const Home = () => {
   const history = useHistory();
   const [student, setStudent] = useState(true);
   const [teacher, setTeacher] = useState(false);
+  const [loginModal, setLoginModal] = useState(false);
   const [inputValue, setInputValue] = useState('');
-  console.log(inputValue);
 
+  // Para mudar o valor da checkbox do Teacher
   const handleStateTeacher = () => {
     if (teacher === false) {
       setTeacher(true);
@@ -39,6 +40,7 @@ export const Home = () => {
     return setTeacher(true);
   };
 
+  // Para mudar o valor da checkbox do Student
   const handleStateStudent = () => {
     if (student === false) {
       setStudent(true);
@@ -48,16 +50,18 @@ export const Home = () => {
     setTeacher(false);
     return setStudent(true);
   };
-  const [loginModal, setLoginModal] = useState(false);
 
+  // Para mostrar a Modal de Login
   function handleLoginModalToggle() {
     return setLoginModal(true);
   }
 
+  // Para fechar a Modal
   function handleModalClose() {
     return setLoginModal(false);
   }
 
+  // Para levar o usuário para a DashBoard
   function handleDashroom() {
     try {
       return history.push('/dashboard');

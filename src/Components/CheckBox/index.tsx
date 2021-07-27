@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { ReactNode, useState } from 'react';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -9,6 +10,8 @@ type CheckBoxProps = {
   state: boolean
 }
 
+/* Corpo da checkbox, por aqui é definido o valor da checkbox, para que seu ícone e estilização mudem de acordo com seu estado (true/false)
+*/
 export function CheckboxLabels({ children, state }: CheckBoxProps) {
   const [checked, setChecked] = useState(true);
 

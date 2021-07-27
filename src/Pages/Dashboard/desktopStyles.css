@@ -51,6 +51,9 @@
     align-items: center;
     justify-content: center;
   }
+  .dashboard-logo-div a :hover {
+    filter: brightness(0.94);
+  }
 
   .dropdown-div-mobile {
     visibility: hidden;
@@ -73,6 +76,10 @@
   }
   .dropdown-div-desktop button h4 {
     color: #ffff;
+  }
+
+  .dropdown-div-desktop button :hover {
+    filter: brightness(0.92);
   }
 
   .profile-div img {

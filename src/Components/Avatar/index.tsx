@@ -35,6 +35,7 @@ interface IAvatarProps {
   avatar: string;
 }
 
+// Aqui é definido o corpo do ícone de avatar do usuário.
 export const AvatarBadge = ({ avatar }: IAvatarProps) => {
   return (
     <div>
