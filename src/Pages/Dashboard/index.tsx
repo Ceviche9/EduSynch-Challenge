@@ -1,6 +1,8 @@
 import React from 'react';
 
+import { Badge } from '@material-ui/core';
 import { Card } from '../../Components/Card';
+import { Dropdown } from '../../Components/Dropdown';
 
 import Logo from '../../Assets/Images/logo.svg';
 import Profile from '../../Assets/Images/profile.svg';
@@ -17,8 +19,10 @@ export const Dashboard = () => {
             <img src={Logo} alt="Logo" />
           </div>
           <div className="profile-div">
-            <h2>menu</h2>
-            <img src={Profile} alt="profile_photo" />
+            <Dropdown />
+            <Badge badgeContent={1} color="primary">
+              <img src={Profile} alt="profile_photo" />
+            </Badge>
           </div>
         </div>
       </header>
@@ -46,8 +50,9 @@ export const Dashboard = () => {
           <Card />
         </div>
       </main>
-      <div>
-        <h2>footer</h2>
+      <div className="dashboard-footer">
+        <p>Copyright © 2020</p>
+        <p>Eduick.</p>
       </div>
     </div>
   );

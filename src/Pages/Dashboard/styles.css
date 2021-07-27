@@ -1,15 +1,15 @@
-body {
-  background: #e5e5e5;
-}
-
 #Dashboard {
   width: 100vw;
   height: 100vh;
   background: #e5e5e5;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .dashboard-header {
-  width: 100vw;
+  width: 100%;
   background: #7a57fd;
 }
 
@@ -25,15 +25,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10%;
 }
 
 .dashboard-main {
+  width: 100%;
   margin-top: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: #e5e5e5;
+  padding-bottom: 5%;
 }
 
 .message-div {
@@ -97,4 +99,20 @@ body {
 .dashboard-text-p p {
   font: 400 22px Open Sans;
   color: #343434;
+}
+
+.dashboard-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  background: #ffff;
+  gap: 5px;
+}
+
+.dashboard-footer p {
+  font: 400 18px Open Sans;
+}
+.dashboard-footer p:nth-child(2) {
+  font: 700 18px Open Sans;
 }

@@ -1,0 +1,12 @@
+.lessions-div {
+  width: 35%;
+  height: 70%;
+  background: #cfc9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.lessions-div p {
+  font: 700 16px Open Sans;
+}
