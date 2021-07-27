@@ -32,6 +32,6 @@ export const Button = styled.button<buttonProps>`
 
   &:hover {
         background: ${darken(0.03, '#7955E8')};
-      }
+  }
 
 `;
