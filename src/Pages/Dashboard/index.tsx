@@ -1,14 +1,18 @@
 import React from 'react';
 
+import { Card } from '../../Components/Card';
+
 import Logo from '../../Assets/Images/logo.svg';
 import Profile from '../../Assets/Images/profile.svg';
 import DubleShape from '../../Assets/Images/dubleshape.svg';
 
+import './styles.css';
+
 export const Dashboard = () => {
   return (
     <div id="Dashboard">
-      <header>
-        <div className="dashboard-header">
+      <header className="dashboard-header">
+        <div className="dashboard-header-div">
           <div>
             <img src={Logo} alt="Logo" />
           </div>
@@ -18,14 +22,17 @@ export const Dashboard = () => {
           </div>
         </div>
       </header>
-      <main>
+      <main className="dashboard-main">
         <div className="message-div">
           <div className="duble-shape-div">
             <img src={DubleShape} alt="duble_shape" />
           </div>
           <div className="dashboard-text">
-            <h3>Hello</h3>
-            <h2>Student</h2>
+            <div className="greetings">
+              <h3>Hello</h3>
+              <h2>Student</h2>
+              <h3>.</h3>
+            </div>
             <div className="dashboard-text-p">
               <p>Whether you are a student trying </p>
               <p>to find your ideal private language</p>
@@ -34,12 +41,14 @@ export const Dashboard = () => {
           </div>
         </div>
         <div>
-          <h2>cards</h2>
+          <Card />
+          <Card />
+          <Card />
         </div>
       </main>
-      <footer>
+      <div>
         <h2>footer</h2>
-      </footer>
+      </div>
     </div>
   );
 };

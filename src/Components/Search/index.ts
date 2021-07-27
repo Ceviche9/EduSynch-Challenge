@@ -12,6 +12,7 @@ export const SearchButton = styled.button`
   font: 700 11px Open Sans;
   color: #744FF4;
   text-align: center;
+  border-width: 0rem;
 
   &:hover {
     background: ${darken(0.07, '#FFD74F')};

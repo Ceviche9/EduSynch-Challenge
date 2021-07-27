@@ -1,16 +1,20 @@
+body {
+  background: #e5e5e5;
+}
+
 #Dashboard {
   width: 100vw;
   height: 100vh;
   background: #e5e5e5;
 }
 
-header {
+.dashboard-header {
   width: 100vw;
   background: #7a57fd;
 }
 
-.dashboard-header {
-  padding: 0.2rem;
+.dashboard-header-div {
+  padding: 0 0.5rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,8 +28,8 @@ header {
   gap: 10%;
 }
 
-main {
-  margin-top: 5%;
+.dashboard-main {
+  margin-top: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -34,11 +38,12 @@ main {
 
 .message-div {
   background: #ffff;
-  width: 420px;
-  height: 321px;
+  width: 400px;
+  height: 341px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: inset;
 }
 
 .duble-shape-div {
@@ -57,11 +62,39 @@ main {
   width: 380px;
   height: 221px;
 }
-.dashboard-text h3 {
-  font: 700 32px Poppins;
+
+.greetings {
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.greetings h3 {
+  font: 400 32px Poppins;
   color: #200e64;
   white-space: nowrap;
 }
+
+.greetings h2 {
+  font: 700 32px Poppins;
+  color: #200e64;
+  white-space: nowrap;
+  padding-left: 3%;
+}
+
+.greetings h3:nth-child(3) {
+  color: #ffd74f;
+  white-space: normal;
+}
+
+.dashboard-text-p {
+  width: 100%;
+  padding-top: 8%;
+  padding-left: 2%;
+}
 .dashboard-text-p p {
-  font: 400 20px Open Sans;
+  font: 400 22px Open Sans;
+  color: #343434;
 }
