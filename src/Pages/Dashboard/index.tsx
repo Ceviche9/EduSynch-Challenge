@@ -10,7 +10,7 @@ import Point from '../../Assets/Images/point.svg';
 import Logo from '../../Assets/Images/logo.svg';
 import Profile from '../../Assets/Images/profile.svg';
 import DubleShape from '../../Assets/Images/dubleshape.svg';
-import Group from '../../Assets/Images/group.svg';
+import Group from '../../Assets/Images/Group.svg';
 import TeacherCard from '../../Assets/Images/card.svg';
 
 import './styles.css';
