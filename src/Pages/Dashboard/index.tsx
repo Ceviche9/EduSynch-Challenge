@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import { Card } from '../../Components/Card';
-import { Dropdown } from '../../Components/Dropdown';
 import { AvatarBadge } from '../../Components/Avatar';
+import { DrawerView } from '../../Components/Drawer';
 
 import Point from '../../Assets/Images/point.svg';
 import Logo from '../../Assets/Images/logo.svg';
@@ -34,7 +34,7 @@ export const Dashboard = () => {
           </div>
           <div className="profile-div">
             <div className="dropdown-div-mobile">
-              <Dropdown />
+              <DrawerView />
             </div>
             <div className="dropdown-div-desktop">
               <Button>
