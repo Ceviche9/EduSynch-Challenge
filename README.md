@@ -1,4 +1,4 @@
-![Layout do eduick](https://user-images.githubusercontent.com/83431609/127242827-7d5ed2a5-77a0-447d-aef0-48d0db10781b.png)
+![Layout do eduick](https://user-images.githubusercontent.com/83431609/127244734-28fce8d5-ba8d-4a1c-80d7-de29ea28bb04.png)
 
 ## 💻 Sobre o desafio
 
