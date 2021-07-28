@@ -15,6 +15,7 @@ interface ICardProps {
 }
 
 // Corpo dos card de aulas, aqui é definida a imágem, titulo, número de aulas e quantidade de estrelas.
+// Dessa forma os dados podem ser adquiridos por uma API.
 export const Card = ({
   lessonsNumber, rating, title, photo,
 }: ICardProps) => {
