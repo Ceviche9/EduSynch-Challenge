@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 // eslint-disable implicit-arrow-linebreak
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';

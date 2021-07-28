@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import styled from 'styled-components';
 import { darken } from 'polished';
 
@@ -15,7 +14,7 @@ export const InputText = styled.input`
   outline: none;
 
   &:hover {
-        background: ${darken(0.01, '#7955E8')};
+    background: ${darken(0.01, '#7955E8')};
   }
 
   &:focus{

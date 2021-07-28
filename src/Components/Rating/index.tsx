@@ -7,7 +7,6 @@ interface IRatingValue {
 }
 
 // Aqui é onde a quantidade de estrelas que cada aula têm.
-
 // O usuário pode até receber um feedback visual ao passar o mouse por cima das estrelas.
 // Porém seu valor não se altera já que é prédefinido.
 
