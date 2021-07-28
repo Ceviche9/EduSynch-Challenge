@@ -49,3 +49,10 @@ textarea {
     font-size: 62.5%;
   }
 }
+
+@media (min-width: 1650px) {
+  body {
+    background-position-x: 1477px;
+    background-position-y: -16px;
+  }
+}

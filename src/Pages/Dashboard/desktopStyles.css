@@ -21,10 +21,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-  }
-
-  body {
-    overflow: scroll !important;
+    overflow-y: scroll !important;
   }
 
   .dashboard-header {
@@ -104,6 +101,10 @@
     justify-content: space-around;
   }
 
+  .greetings {
+    padding-left: 0;
+  }
+
   .greetings h3 {
     font: 400 22px Poppins;
   }
@@ -153,9 +154,7 @@
     padding-right: 0 !important;
     margin-bottom: 0 !important;
     align-self: flex-start;
-    position: absolute;
     margin-top: 2%;
-    left: 104px;
   }
 
   .cards-div {
