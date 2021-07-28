@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 
-import { Button } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import { RatingStars } from '../Rating';
 import { Lessons } from '../Lessions';
 
