@@ -29,11 +29,10 @@ export const Button = styled.button<buttonProps>`
     border: none;
   `}
 
-  background: ${(checked) => checked ? 'none' : 'white'};
-
+  background: ${(checked) => checked ? '#210e6441' : 'none'};
 
   &:hover {
-        background: ${darken(0.03, '#7955E8')};
+    background: ${darken(0.03, '#7955E8')};
   }
 
 `;

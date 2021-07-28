@@ -129,6 +129,10 @@
     position: fixed;
   }
 
+  .dashboard-text-p p {
+    font-size: 2px;
+  }
+
   .dashboard-text-desktop {
     visibility: visible !important;
     position: relative !important;
@@ -149,7 +153,9 @@
     padding-right: 0 !important;
     margin-bottom: 0 !important;
     align-self: flex-start;
-    padding-right: 20%;
+    position: absolute;
+    margin-top: 2%;
+    left: 104px;
   }
 
   .cards-div {
@@ -170,5 +176,11 @@
   .dashboard-footer-desktop {
     visibility: visible !important;
     position: relative !important;
+  }
+  .dashboard-footer p {
+    font: 400 10px Open Sans;
+  }
+  .dashboard-footer p:nth-child(2) {
+    font: 700 10px Open Sans;
   }
 }

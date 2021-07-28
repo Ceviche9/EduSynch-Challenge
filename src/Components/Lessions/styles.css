@@ -15,4 +15,8 @@
   .lessions-div p {
     font: 700 11px Open Sans;
   }
+  .lessions-div {
+    width: 35%;
+    height: 25px;
+  }
 }

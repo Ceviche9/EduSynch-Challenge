@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 
 import { Link, useHistory } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
