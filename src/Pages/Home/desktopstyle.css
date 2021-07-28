@@ -266,6 +266,10 @@
     color: #ffff;
   }
 
+  .header-logo-info :hover {
+    opacity: 0.87;
+  }
+
   .getstarted-button {
     visibility: visible;
   }
