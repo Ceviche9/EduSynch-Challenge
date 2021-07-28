@@ -23,10 +23,16 @@ import './styles.css';
 import './desktopstyle.css';
 
 export const Home = () => {
+  // O history é usado para mandar o usuário para uma página diferente
   const history = useHistory();
+  // A variável student indica se o usuário é um estudante ou não.
   const [student, setStudent] = useState(true);
+  // A variável teacher indica se o usuário é um professor ou não.
+  // Não é possível que um usuário selecione as duas opções, apenas uma será armazenada como true ou false.
   const [teacher, setTeacher] = useState(false);
+  // LoginModal indica se a modal de login está na tela ou não.
   const [loginModal, setLoginModal] = useState(false);
+  // Aqui o valor digitado na busca é armazenado.
   const [inputValue, setInputValue] = useState('');
 
   // Para mudar o valor da checkbox do Teacher

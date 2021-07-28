@@ -6,7 +6,7 @@
   }
 
   body {
-    overflow: visible;
+    overflow: scroll;
   }
 
   .menu {
@@ -207,6 +207,7 @@
 
 @media (min-width: 1100px) {
   #Home-page {
+    padding: 0;
     max-width: 100%;
     width: 100%;
     display: flex;

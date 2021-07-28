@@ -118,9 +118,6 @@ body {
   gap: 30px;
 }
 
-.Option-div {
-}
-
 .Option-div p {
   font: 700 11px Poppins;
 }
@@ -148,6 +145,11 @@ body {
   justify-self: center;
   width: 100vw;
   height: 100vh;
+}
+
+#footer-div {
+  height: 100%;
+  width: 100%;
 }
 
 footer {
