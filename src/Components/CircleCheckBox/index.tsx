@@ -22,7 +22,7 @@ export const CircleCheckBox = withStyles({
     <Checkbox
       className="Checkbox"
       icon={<FiberManualRecordIcon />}
-      checkedIcon={<CheckCircleIcon />}
+      checkedIcon={<CheckCircleIcon style={{ fontSize: 'large' }} />}
       color="default"
       size="medium"
       title={props.title}
