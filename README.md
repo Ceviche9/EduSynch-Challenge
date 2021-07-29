@@ -13,8 +13,8 @@ Este desafio consiste no desenvolvimento da interface de uma landing page e uma 
 Clone o projeto e acesse a pasta do projeto.
 
 ```bash
-$ git clone https://github.com/Ceviche9/EduSynch-Challenger
-$ cd EduSynch-Challenger
+$ git clone https://github.com/Ceviche9/EduSynch-Challenge
+$ cd EduSynch-Challenge
 ```
 Como instalar:
 ```bash
