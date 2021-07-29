@@ -65,6 +65,11 @@ header {
   align-self: flex-start;
 }
 
+.login-modal-button-desktop {
+  visibility: hidden;
+  position: fixed;
+}
+
 @media (min-width: 1100px) {
   #login-modal {
     padding: 1rem;
@@ -91,5 +96,19 @@ header {
     justify-content: flex-end;
     padding: 1rem;
     width: 436px;
+  }
+
+  .login-modal-button-mobile {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .login-modal-button-desktop {
+    visibility: visible;
+    position: relative;
+  }
+
+  .login-modal-button-desktop button {
+    margin-bottom: 100%;
   }
 }

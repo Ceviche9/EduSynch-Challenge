@@ -13,10 +13,13 @@ import './styles.css';
 
 type Anchor = 'top';
 
+// Lógica da dropdown que aparece na dashboard no modo mobile.
 export const DrawerView = () => {
+  // o state define se a dashboard está visível oou não na tela.
   const [state, setState] = useState<boolean>(false);
 
-  const toggleDrawer = (anchor: Anchor, open: boolean) => (
+  // função que recebe o evento que torna a dropdown visível.
+  const toggleDrawer = (open: boolean) => (
     event: React.KeyboardEvent | React.MouseEvent,
   ) => {
     if (
@@ -30,11 +33,12 @@ export const DrawerView = () => {
     setState(open);
   };
 
+  // conteúdo da dropdown.
   const list = (anchor: Anchor) => (
     <div
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
     >
       <List
         className="Drawer-body"
@@ -57,11 +61,11 @@ export const DrawerView = () => {
         <div
           key={anchor}
         >
-          <Button onClick={toggleDrawer(anchor, true)}><KeyboardArrowDownIcon /></Button>
+          <Button onClick={toggleDrawer(true)}><KeyboardArrowDownIcon /></Button>
           <Drawer
             anchor={anchor}
             open={state}
-            onClose={toggleDrawer(anchor, false)}
+            onClose={toggleDrawer(false)}
           >
             {list(anchor)}
           </Drawer>

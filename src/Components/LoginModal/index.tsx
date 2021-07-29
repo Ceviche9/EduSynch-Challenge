@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import CloseIcon from '@material-ui/icons/Close';
 import { common } from '@material-ui/core/colors';
 import Modal from '@material-ui/core/Modal';
+import CancelIcon from '@material-ui/icons/Cancel';
 import { InputText } from '../input';
 import { ModalButton } from '../ModalSearchButton';
 import { PasswordInput } from '../PasswordInput';
@@ -19,7 +20,6 @@ type ModalMenuProps = {
 }
 
 // Componente da Modal de Login
-
 export const LoginModal = (
   {
     loginModal,
@@ -42,12 +42,22 @@ export const LoginModal = (
             JUST LOGIN
           </h1>
         </div>
-        <Button
-          className="CloseButton"
-          onClick={handleLoginClose}
-        >
-          <CloseIcon style={{ color: common.white }} />
-        </Button>
+        <div className="login-modal-button-mobile">
+          <Button
+            className="CloseButton"
+            onClick={handleLoginClose}
+          >
+            <CloseIcon style={{ color: common.white }} />
+          </Button>
+        </div>
+        <div className="login-modal-button-desktop">
+          <Button
+            className="CloseButton"
+            onClick={handleLoginClose}
+          >
+            <CancelIcon style={{ color: common.white, fontSize: 'large' }} />
+          </Button>
+        </div>
       </header>
       <main>
         <div className="Auth">
