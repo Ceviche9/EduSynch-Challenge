@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
 
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import { Button } from '../../Components/Button';
@@ -23,8 +23,6 @@ import './styles.css';
 import './desktopstyle.css';
 
 export const Home = () => {
-  // O history é usado para mandar o usuário para uma página diferente
-  const history = useHistory();
   // A variável student indica se o usuário é um estudante ou não.
   const [student, setStudent] = useState(true);
   // A variável teacher indica se o usuário é um professor ou não.
@@ -65,15 +63,6 @@ export const Home = () => {
   // Para fechar a Modal
   function handleModalClose() {
     return setLoginModal(false);
-  }
-
-  // Para levar o usuário para a DashBoard
-  function handleDashroom() {
-    try {
-      return history.push('/dashboard');
-    } catch (e) {
-      return console.log(e);
-    }
   }
 
   return (
@@ -165,16 +154,12 @@ export const Home = () => {
                   </Button>
                 </div>
                 <div className="search-button-mobile">
-                  <SearchButton
-                    onClick={handleDashroom}
-                  >
+                  <SearchButton>
                     <h2>SEARCH</h2>
                   </SearchButton>
                 </div>
                 <div className="search-button-desktop">
-                  <DesktopSearchButton
-                    onClick={handleDashroom}
-                  >
+                  <DesktopSearchButton>
                     <h2>SEARCH</h2>
                   </DesktopSearchButton>
                 </div>

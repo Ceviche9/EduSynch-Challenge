@@ -1,4 +1,6 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+
 import Button from '@material-ui/core/Button';
 
 import CloseIcon from '@material-ui/icons/Close';
@@ -13,10 +15,8 @@ import { DesktopButton } from '../DesktopButton';
 import './styles.css';
 
 type ModalMenuProps = {
-
   loginModal: boolean;
   handleCloseLoginModal: () => void;
-
 }
 
 // Componente da Modal de Login
@@ -28,6 +28,13 @@ export const LoginModal = (
 ) => {
   function handleLoginClose() {
     return handleCloseLoginModal();
+  }
+
+  const history = useHistory();
+
+  // Para levar o usuário até a dashboard
+  function handleLogin() {
+    history.push('/dashboard');
   }
 
   // Corpo do componente da modal de Login
@@ -75,7 +82,9 @@ export const LoginModal = (
               </ModalButton>
             </div>
             <div className="modal-button-desktop">
-              <DesktopButton>
+              <DesktopButton
+                onClick={handleLogin}
+              >
                 <h2>LOGIN</h2>
               </DesktopButton>
             </div>

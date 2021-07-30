@@ -18,5 +18,4 @@ export const DesktopSearchButton = styled.button`
     background: ${darken(0.07, '#FFD74F')};
   }
 
-
 `;
