@@ -77,7 +77,9 @@ export const LoginModal = (
           </div>
           <div className="modal-button-div">
             <div className="modal-button-mobile">
-              <ModalButton>
+              <ModalButton
+                onClick={handleLogin}
+              >
                 <h2>LOGIN</h2>
               </ModalButton>
             </div>
