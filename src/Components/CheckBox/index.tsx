@@ -6,9 +6,9 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { CircleCheckBox } from '../CircleCheckBox';
 
 type CheckBoxProps = {
-  children: ReactNode;
-  state: boolean
-}
+  children: ReactNode,
+  state: boolean,
+};
 
 /* Corpo da checkbox, por aqui é definido o valor da checkbox, para que seu ícone e estilização mudem de acordo com seu estado (true/false)
 */
