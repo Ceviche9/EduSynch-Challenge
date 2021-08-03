@@ -7,8 +7,7 @@ import {
 import { MenuListComposition } from './index';
 
 afterEach(cleanup);
-
-//------------------------------------------------------------------------------
+// Esse teste apenas verifica se o Botão de menu está sendo renderizado.
 test('Should render the menu', () => {
   render(<MenuListComposition />);
 });
