@@ -65,6 +65,13 @@ export const Home = () => {
     return setLoginModal(false);
   }
 
+  // Para pegar o valor do input de pesquisa.
+  function handleSearch() {
+    const searchValue = inputValue;
+    console.log(searchValue);
+    return setInputValue('');
+  }
+
   return (
     <div id="Home-page">
       <header className="Header">
@@ -154,12 +161,16 @@ export const Home = () => {
                   </Button>
                 </div>
                 <div className="search-button-mobile">
-                  <SearchButton>
+                  <SearchButton
+                    onClick={handleSearch}
+                  >
                     <h2>SEARCH</h2>
                   </SearchButton>
                 </div>
                 <div className="search-button-desktop">
-                  <DesktopSearchButton>
+                  <DesktopSearchButton
+                    onClick={handleSearch}
+                  >
                     <h2>SEARCH</h2>
                   </DesktopSearchButton>
                 </div>
