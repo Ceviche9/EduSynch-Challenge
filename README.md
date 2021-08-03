@@ -24,6 +24,10 @@ $ yarn
 # Para rodar o projeto
 $ yarn start
 ```
+Como rodar os testes:
+```bash
+$ yarn test
+```
 A aplicação irá aparecer no navegador no endereço http://localhost:3000.
 
 ---
