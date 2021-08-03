@@ -16,7 +16,7 @@ Clone o projeto e acesse a pasta do projeto.
 $ git clone https://github.com/Ceviche9/EduSynch-Challenge
 $ cd EduSynch-Challenge
 ```
-Como instalar:
+## Como instalar:
 ```bash
 # Para instalar as dependências
 $ yarn
@@ -24,10 +24,14 @@ $ yarn
 # Para rodar o projeto
 $ yarn start
 ```
-Como rodar os testes:
+## Testes:
+Os testes dessa aplicação verificam as funcionalidades do componente de checkbox.
 ```bash
+# Como rodar os testes
 $ yarn test
 ```
+
+
 A aplicação irá aparecer no navegador no endereço http://localhost:3000.
 
 ---
