@@ -49,3 +49,15 @@ test('CheckboxLabels state is true when clicked', () => {
   fireEvent.click(checkboxA);
   expect(state).toEqual(true);
 });
+//-------------------------------------------------------------------------------
+// Esse teste verifica se o children da checkboxLabels não é null.
+test('CheckboxLabels children should not be null', () => {
+  render(
+    <CheckboxLabels state={false}>
+      <p>Test</p>
+    </CheckboxLabels>,
+  );
+
+  const CheckboxChildren = screen.getByText('Test');
+  expect(CheckboxChildren).not.toBeNull();
+});
