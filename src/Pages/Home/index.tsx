@@ -67,8 +67,11 @@ export const Home = () => {
 
   // Para pegar o valor do input de pesquisa.
   function handleSearch() {
+    // Ná variável SearchValue é armazenado o que o usuário digitou.
     const searchValue = inputValue;
-    console.log(searchValue);
+    // Na variável IsStudent verifica qual checkbox o usuário marcou.
+    const IsStudent = student;
+    console.log(searchValue, IsStudent);
     return setInputValue('');
   }
 
