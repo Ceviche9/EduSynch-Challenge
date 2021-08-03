@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { ReactNode, useState } from 'react';
