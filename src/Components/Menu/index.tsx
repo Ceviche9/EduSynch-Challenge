@@ -5,9 +5,8 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 
-import MenuIcon from '@material-ui/icons/Menu';
-import { common } from '@material-ui/core/colors';
 import { ModalMenu } from '../ModalMenu';
+import hamburger from '../../Assets/Images/hamburger.svg';
 import LogoImg from '../../Assets/Images/logo.svg';
 
 import './styles.css';
@@ -33,7 +32,7 @@ export const MenuListComposition = () => {
           onClick={handleToggle}
         >
           <div className="Logo-div">
-            <MenuIcon style={{ color: common.white }} />
+            <img src={hamburger} alt="Menu" />
             <img src={LogoImg} alt="Logo" />
           </div>
         </Button>
