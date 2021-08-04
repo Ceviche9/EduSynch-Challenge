@@ -29,7 +29,7 @@ export const Dashboard = () => {
               <img src={Logo} alt="Logo" />
             </Link>
             <div className="dashboard-header-desktop">
-              <p>My classes</p>
+              <Link to="/dashboard">My classes</Link>
             </div>
           </div>
           <div className="profile-div">
