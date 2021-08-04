@@ -66,7 +66,11 @@ body {
   }
 
   #card-body button :hover {
-    filter: brightness(0.97);
+    filter: brightness(0.99);
+  }
+
+  .card-info :hover {
+    filter: none;
   }
 
   .card-body-div {
