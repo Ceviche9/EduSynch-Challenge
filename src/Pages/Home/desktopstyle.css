@@ -275,7 +275,7 @@
   }
 
   .getstarted-button h2 {
-    font: 700 10px Open Sans;
+    font: 700 12px Open Sans;
   }
   .main-mobile {
     display: flex;
@@ -307,7 +307,7 @@
 
   .search-container {
     display: flex;
-    margin-right: 15%;
+    margin-right: 18%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -355,6 +355,7 @@
   }
 
   .search-content {
+    margin-left: 3%;
     padding-top: 5%;
     display: flex;
     align-items: flex-start;

@@ -9,7 +9,7 @@ export const DesktopSearchButton = styled.button`
   width: 209px;
   height: 56px;
   background: #FFD74F;
-  font: 700 11px Open Sans;
+  font: 700 10px Open Sans;
   color: #744FF4;
   text-align: center;
   border-width: 0rem;
