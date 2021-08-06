@@ -2,6 +2,7 @@ body {
   background: none;
 }
 #card-body {
+  margin-left: 4%;
   margin-top: 10%;
   background: #ffff;
   width: 90%;
