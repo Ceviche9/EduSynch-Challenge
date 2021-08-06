@@ -2,14 +2,8 @@
   width: 100vw;
   height: 100vh;
   background: #e5e5e5;
-}
-
-body {
   overflow-y: scroll;
-}
-
-html {
-  background: #e5e5e5;
+  overflow-x: hidden !important;
 }
 
 .dashboard-header {
@@ -64,7 +58,7 @@ html {
 
 .message-div {
   background: #ffff;
-  width: 400px;
+  width: 95%;
   height: 341px;
   display: flex;
   flex-direction: column;
@@ -78,24 +72,18 @@ html {
 }
 
 .duble-shape-div {
-  align-self: flex-end;
-  padding-right: 10px;
-  margin-bottom: -15%;
-}
-
-.duble-shape-div img {
-  width: 140px;
-  height: 110px;
+  visibility: hidden;
+  position: fixed;
 }
 
 .dashboard-text {
   align-self: flex-end;
-  width: 380px;
+  width: 95%;
   height: 221px;
 }
 
 .greetings {
-  padding-left: 2%;
+  padding-left: 1%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -103,13 +91,13 @@ html {
 }
 
 .greetings h3 {
-  font: 400 32px Poppins;
+  font: 400 22px Poppins;
   color: #200e64;
   white-space: nowrap;
 }
 
 .greetings h2 {
-  font: 700 32px Poppins;
+  font: 700 22px Poppins;
   color: #200e64;
   white-space: nowrap;
   padding-left: 3%;
@@ -153,4 +141,166 @@ html {
 .dashboard-footer-desktop {
   visibility: hidden;
   position: fixed;
+}
+
+@media (min-width: 370px) {
+  #Dashboard {
+    width: 100vw;
+    height: 100vh;
+    background: #e5e5e5;
+    overflow-x: scroll;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+
+  html {
+    background: #e5e5e5;
+  }
+
+  .dashboard-header {
+    width: 100%;
+    background: #7a57fd;
+  }
+
+  .dashboard-desktop-detail {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .dashboard-desktop-detail img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .dashboard-header-desktop {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .dashboard-header-div {
+    padding: 0 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropdown-div-desktop {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .dashboard-main {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #e5e5e5;
+    padding-bottom: 5%;
+  }
+
+  .message-div {
+    background: #ffff;
+    width: 400px;
+    height: 341px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset;
+  }
+
+  .dashboard-text-desktop {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .duble-shape-div {
+    visibility: visible;
+    position: relative;
+    align-self: flex-end;
+    padding-right: 10px;
+    margin-bottom: -15%;
+  }
+
+  .duble-shape-div img {
+    width: 140px;
+    height: 110px;
+  }
+
+  .dashboard-text {
+    align-self: flex-end;
+    width: 380px;
+    height: 221px;
+  }
+
+  .greetings {
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  .greetings h3 {
+    font: 400 32px Poppins;
+    color: #200e64;
+    white-space: nowrap;
+  }
+
+  .greetings h2 {
+    font: 700 32px Poppins;
+    color: #200e64;
+    white-space: nowrap;
+    padding-left: 3%;
+  }
+
+  .greetings h3:nth-child(3) {
+    color: #ffd74f;
+    white-space: normal;
+  }
+
+  .dashboard-text-p {
+    padding-top: 8%;
+    padding-left: 2%;
+  }
+  .dashboard-text-p p {
+    font: 400 22px Open Sans;
+    color: #343434;
+  }
+
+  .group-img-desktop {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .dashboard-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    background: #ffff;
+    gap: 5px;
+  }
+
+  .dashboard-footer p {
+    font: 400 18px Open Sans;
+  }
+  .dashboard-footer p:nth-child(2) {
+    font: 700 18px Open Sans;
+  }
+
+  .dashboard-footer-desktop {
+    visibility: hidden;
+    position: fixed;
+  }
 }
