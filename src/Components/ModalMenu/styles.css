@@ -1,47 +1,45 @@
-@media (min-width: 230px) {
-  #Modal-div {
-    width: 80%;
-    min-width: 95%;
-    max-width: 348px;
-    height: 620px;
-    background: #200e64;
-    position: fixed;
-    top: 3%;
-    left: 3%;
-  }
+#Modal-div {
+  width: 80%;
+  min-width: 95%;
+  max-width: 348px;
+  height: 620px;
+  background: #200e64;
+  position: fixed;
+  top: 3%;
+  left: 3%;
+}
 
-  #Modal-div header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20%;
-  }
+#Modal-div header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20%;
+}
 
-  .info {
-    margin-top: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
+.info {
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
-  .info a {
-    text-decoration: none;
-    color: #fff;
-    font: 400 1.25rem Poppins;
-  }
+.info a {
+  text-decoration: none;
+  color: #fff;
+  font: 400 1.25rem Poppins;
+}
 
-  .Search {
-    margin-top: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.Search {
+  margin-top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Search button {
-    width: 90%;
-  }
+.Search button {
+  width: 90%;
 }
 
 @media (min-width: 370px) {
