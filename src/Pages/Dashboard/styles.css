@@ -72,8 +72,16 @@
 }
 
 .duble-shape-div {
-  visibility: hidden;
-  position: fixed;
+  visibility: visible;
+  position: relative;
+  align-self: flex-end;
+  padding-right: 10px;
+  margin-bottom: -15%;
+}
+
+.duble-shape-div img {
+  width: 140px;
+  height: 110px;
 }
 
 .dashboard-text {
@@ -91,13 +99,13 @@
 }
 
 .greetings h3 {
-  font: 400 22px Poppins;
+  font: 400 24px Poppins;
   color: #200e64;
   white-space: nowrap;
 }
 
 .greetings h2 {
-  font: 700 22px Poppins;
+  font: 700 24px Poppins;
   color: #200e64;
   white-space: nowrap;
   padding-left: 3%;

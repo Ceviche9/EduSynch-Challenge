@@ -127,6 +127,11 @@
     font: 400 22px Open Sans;
     color: #343434;
   }
+  .cards-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .group-img-desktop {
     visibility: hidden;

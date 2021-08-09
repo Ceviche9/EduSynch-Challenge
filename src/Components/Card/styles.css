@@ -102,7 +102,7 @@ body {
   }
 
   .card-title h4 {
-    font: 700 1.2rem Poppins;
+    font: 700 1.7rem Poppins;
     color: #200e64;
   }
 }
@@ -130,5 +130,10 @@ body {
   .card-body-div {
     width: 290px;
     height: 231px;
+  }
+
+  .card-title h4 {
+    font: 700 1.2rem Poppins;
+    color: #200e64;
   }
 }
