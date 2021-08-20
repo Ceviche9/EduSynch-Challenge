@@ -8,6 +8,19 @@ Este desafio consiste no desenvolvimento da interface de uma landing page e uma 
 - Landing Page: https://www.figma.com/file/vxbTpBRViZn0dY5EnjlVMZ/Eduick?node-id=102%3A793
 - Dashboard: https://www.figma.com/file/vxbTpBRViZn0dY5EnjlVMZ/Eduick?node-id=14%3A295
 
+## ⚡️ Funcionalidades
+
+Landing page:
+
+- Ação visual de check dos itens: "I'm a teacher" e "I'm a student".
+- Uma modal de menu aparece ao clicar no menu hamburguer (responsive mode).
+- Ao clicar em "Get Started" mostra a modal de login.
+
+Dashboard:
+
+- lista de cursos.
+- Na versão mobile ação de dropdown (onde aparece change to teacher mode).
+
 ## 🚀 Como rodar.
 
 Clone o projeto e acesse a pasta do projeto.
