@@ -26,8 +26,8 @@ Dashboard:
 Clone o projeto e acesse a pasta do projeto.
 
 ```bash
-$ git clone https://github.com/Ceviche9/EduSynch-Challenge
-$ cd EduSynch-Challenge
+$ git clone https://github.com/Ceviche9/Eduick
+$ cd Eduick
 ```
 ## Como instalar:
 ```bash
