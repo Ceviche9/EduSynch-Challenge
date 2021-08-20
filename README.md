@@ -1,6 +1,6 @@
 ![Layout do eduick](https://user-images.githubusercontent.com/83431609/127244734-28fce8d5-ba8d-4a1c-80d7-de29ea28bb04.png)
 
-## 💻 Sobre o desafio
+## 💻 Project
 
 Este desafio consiste no desenvolvimento da interface de uma landing page e uma dashboard. Os mockups estão no figma:
 
