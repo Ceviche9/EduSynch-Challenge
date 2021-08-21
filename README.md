@@ -2,47 +2,48 @@
 
 ## 💻 Project
 
-- Projeto: https://www.figma.com/file/vxbTpBRViZn0dY5EnjlVMZ/Eduick
+- Project: https://www.figma.com/file/vxbTpBRViZn0dY5EnjlVMZ/Eduick
 - Landing Page: https://www.figma.com/file/vxbTpBRViZn0dY5EnjlVMZ/Eduick?node-id=102%3A793
 - Dashboard: https://www.figma.com/file/vxbTpBRViZn0dY5EnjlVMZ/Eduick?node-id=14%3A295
 
-## ⚡️ Funcionalidades
+## ⚡️ Features
 
 Landing page:
 
-- Ação visual de check dos itens: "I'm a teacher" e "I'm a student".
-- Uma modal de menu aparece ao clicar no menu hamburguer (responsive mode).
-- Ao clicar em "Get Started" mostra a modal de login.
+- Visual action of checking the items: "I'm a teacher" and "I'm a student".
+- A modal appears when you click on the hamburger menu (responsive mode).
+- Clicking on "Get Started" shows the login modal.
 
 Dashboard:
 
-- lista de cursos.
-- Na versão mobile ação de dropdown (onde aparece change to teacher mode).
+- course list.
+- In the mobile version a dropdown appears when you click on the option change to teacher mode.
 
-## 🚀 Como rodar.
+## 🚀 How to run.
 
-Clone o projeto e acesse a pasta do projeto.
+Clone the project and access the project folder.
 
 ```bash
 $ git clone https://github.com/Ceviche9/Eduick
 $ cd Eduick
 ```
-## Como instalar:
+## How to Install:
 ```bash
-# Para instalar as dependências
+# To install the dependencies
 $ yarn
 
-# Para rodar o projeto
+# To run the project
 $ yarn start
 ```
-## Testes:
-Os testes dessa aplicação verificam as funcionalidades do componente de checkbox.
+
+## Tests:
+The tests of this application verify the functionality of the checkbox component.
 ```bash
-# Como rodar os testes
+## How to run the tests
 $ yarn test
 ```
 
 
-A aplicação irá aparecer no navegador no endereço http://localhost:3000.
+The application will appear in the browser at the address http://localhost:3000.
 
 ---
